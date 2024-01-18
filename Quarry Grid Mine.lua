@@ -6,7 +6,7 @@ end
 
 local xDist,yDist,zDist = args[1],args[2],args[3]
 
-func fuelTurtle()
+function fuelTurtle()
   if turtle.getFuelLevel() ~= "unlimited" and turtle.getFuelLevel() < 1 then
     turtle.refuel()
   end
